@@ -15,12 +15,12 @@ public class MyBase extends Base{
 	}
 	
 	
-	public void service() {
-		if(super.equals("낮")) {
+	public void service(String state) {
+		if(state.equals("낮")) {
 			day();
-		} else if(super.equals("밤")) {
+		} else if(state.equals("밤")) {
 			night();
-		} else if (super.equals("오후")){ //오후 고치기
+		} else if (state.equals("오후")){ 
 			afternoon();
 		}
 	}
